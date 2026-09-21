@@ -30,4 +30,4 @@ jobs:
 
       - name: Run test suite with verbose output
         run: |
-          PYTHONPATH=. pytest -vv
+          PYTHONPATH=. python -m pytest -vv

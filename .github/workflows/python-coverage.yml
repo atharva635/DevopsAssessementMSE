@@ -31,7 +31,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=xml
+          PYTHONPATH=. python -m pytest --cov=src --cov-report=term-missing --cov-report=xml
 
       - name: Publish coverage comment on pull request
         uses: py-cov-action/python-coverage-comment-action@v3
